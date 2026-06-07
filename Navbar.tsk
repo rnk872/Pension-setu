@@ -1,0 +1,22 @@
+import { Link } from "react-router-dom";
+
+export default function Navbar() {
+  return (
+    <nav className="bg-red-800 text-white shadow-lg">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between">
+        <h1 className="font-bold text-xl">
+          PensionSetu Bharat
+        </h1>
+
+        <div className="flex gap-4 flex-wrap">
+          <Link to="/">Home</Link>
+          <Link to="/dashboard">Dashboard</Link>
+          <Link to="/calculator">Calculator</Link>
+          <Link to="/banks">Banks</Link>
+          <Link to="/assistant">AI Assistant</Link>
+          <Link to="/helpline">Helpline</Link>
+        </div>
+      </div>
+    </nav>
+  );
+}
