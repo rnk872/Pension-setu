@@ -1,0 +1,69 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import Helpline from "./pages/Helpline";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import ForgotPassword from "./pages/ForgotPassword";
+import Dashboard from "./pages/Dashboard";
+import PensionStatus from "./pages/PensionStatus";
+import PensionCalculator from "./pages/PensionCalculator";
+import PensionTimeline from "./pages/PensionTimeline";
+import PensionHealthScore from "./pages/PensionHealthScore";
+import VoiceComplaint from "./pages/VoiceComplaint";
+import ComplaintCenter from "./pages/ComplaintCenter";
+import ComplaintTracking from "./pages/ComplaintTracking";
+import AIAssistant from "./pages/AIAssistant";
+import LanguageSettings from "./pages/LanguageSettings";
+import AccessibilitySettings from "./pages/AccessibilitySettings";
+import NearbyBanks from "./pages/NearbyBanks";
+import NearbyHospitals from "./pages/NearbyHospitals";
+import NearbyGovernmentOffices from "./pages/NearbyGovernmentOffices";
+import DigitalPensionCard from "./pages/DigitalPensionCard";
+import DocumentVault from "./pages/DocumentVault";
+import EmergencySOS from "./pages/EmergencySOS";
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/helpline" element={<Helpline />} />
+
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/status" element={<PensionStatus />} />
+        <Route path="/calculator" element={<PensionCalculator />} />
+        <Route path="/timeline" element={<PensionTimeline />} />
+        <Route path="/health-score" element={<PensionHealthScore />} />
+
+        <Route path="/voice" element={<VoiceComplaint />} />
+        <Route path="/complaints" element={<ComplaintCenter />} />
+        <Route path="/tracking" element={<ComplaintTracking />} />
+
+        <Route path="/assistant" element={<AIAssistant />} />
+        <Route path="/languages" element={<LanguageSettings />} />
+        <Route path="/accessibility" element={<AccessibilitySettings />} />
+
+        <Route path="/banks" element={<NearbyBanks />} />
+        <Route path="/hospitals" element={<NearbyHospitals />} />
+        <Route path="/offices" element={<NearbyGovernmentOffices />} />
+
+        <Route path="/card" element={<DigitalPensionCard />} />
+        <Route path="/vault" element={<DocumentVault />} />
+        <Route path="/sos" element={<EmergencySOS />} />
+
+      </Routes>
+    </BrowserRouter>
+  );
+  }
