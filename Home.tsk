@@ -1,0 +1,23 @@
+import MainLayout from "../layouts/MainLayout";
+
+export default function Home() {
+  return (
+    <MainLayout>
+      <div className="min-h-screen bg-white">
+
+        <section className="bg-gradient-to-r from-red-800 to-yellow-500 text-white py-24 text-center">
+
+          <h1 className="text-5xl font-bold">
+            PensionSetu Bharat
+          </h1>
+
+          <p className="mt-4 text-xl">
+            Respecting a Lifetime of Service
+          </p>
+
+        </section>
+
+      </div>
+    </MainLayout>
+  );
+}
